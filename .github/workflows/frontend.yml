@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "democicdpipeline" --name "staticsitecicd" --resource-group "cicd-pipeline_group"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cicd-pipeline" --name "staticsitecicd" --resource-group "cicd-pipeline_group"
   # Azure logout
     - name: logout
       run: |
